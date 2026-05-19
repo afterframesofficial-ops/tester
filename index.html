@@ -3,85 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artisan Café - Premium Restaurant Template</title>
+    <title>Artisan Café | Premium Experience</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts for Premium Feel -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hover-card:hover { transform: translateY(-10px); }
     </style>
 </head>
-<body class="bg-[#FAFAFA] text-stone-900">
+<body class="bg-stone-50 text-stone-900">
 
     <!-- Navigation -->
-    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+    <nav class="max-w-7xl mx-auto px-8 py-8 flex justify-between items-center">
         <div class="text-2xl font-bold tracking-tighter uppercase">Artisan.</div>
-        <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
-            <a href="#menu" class="hover:text-stone-500 transition">Menu</a>
-            <a href="#about" class="hover:text-stone-500 transition">Our Story</a>
-            <a href="#location" class="hover:text-stone-500 transition">Location</a>
+        <div class="flex gap-8 text-sm uppercase tracking-widest font-medium">
+            <a href="#" class="hover:text-stone-500 transition">Menu</a>
+            <a href="#" class="hover:text-stone-500 transition">Story</a>
+            <a href="#" class="bg-stone-900 text-white px-6 py-2 rounded-full hover:bg-stone-700 transition">Reserve</a>
         </div>
-        <a href="#" class="bg-stone-900 text-white px-6 py-2 text-sm uppercase hover:bg-stone-700 transition">Book Table</a>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="max-w-7xl mx-auto px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-            <h1 class="text-6xl md:text-7xl leading-tight mb-6">Experience Coffee, Elevated.</h1>
-            <p class="text-lg text-stone-600 mb-8 max-w-md">Small batch roasting, locally sourced ingredients, and an atmosphere designed for quiet moments. Located in the heart of downtown.</p>
+    <!-- Hero Section: Adding Depth with Overlapping Layout -->
+    <header class="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative z-10">
+            <span class="text-stone-500 uppercase tracking-[0.2em] text-sm">Est. 2026</span>
+            <h1 class="text-7xl leading-[0.9] mt-4 mb-8">Where Coffee Meets Art.</h1>
+            <p class="text-lg text-stone-600 mb-10 max-w-md leading-relaxed">Experience a curated journey of flavor in our minimalist sanctuary. Designed for those who appreciate the finer details.</p>
             <div class="flex gap-4">
-                <a href="#menu" class="bg-stone-900 text-white px-8 py-4 uppercase text-sm tracking-wider hover:bg-stone-700 transition">Explore Menu</a>
-                <a href="#" class="border border-stone-300 px-8 py-4 uppercase text-sm tracking-wider hover:bg-stone-100 transition">Order Online</a>
+                <button class="bg-stone-900 text-white px-10 py-4 rounded-full hover:shadow-2xl hover:shadow-stone-400 transition-all">Discover Menu</button>
             </div>
         </div>
-        <!-- Placeholder for your high-quality hero photo -->
-        <div class="h-[500px] bg-stone-200 rounded-sm w-full object-cover">
-            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Cafe interior" class="w-full h-full object-cover">
+        <!-- Image with subtle shadow & rounding -->
+        <div class="relative h-[600px] w-full bg-stone-200 rounded-[2rem] overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
         </div>
     </header>
 
-    <!-- Menu Section -->
-    <section id="menu" class="max-w-7xl mx-auto px-8 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl mb-4">Crafted Selections</h2>
-            <p class="text-stone-500">Hand-picked favorites for your morning ritual.</p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-12">
-            <!-- Menu Item -->
-            <div class="group">
-                <div class="h-80 bg-stone-200 mb-6 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+    <!-- Menu Section: The "Card" Experience -->
+    <section class="max-w-7xl mx-auto px-8 py-24">
+        <h2 class="text-5xl mb-16 text-center">Curated Selections</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 hover-card transition-all duration-300 hover:shadow-2xl">
+                <div class="h-64 bg-stone-100 rounded-2xl mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover">
                 </div>
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl">Signature Espresso</h3>
-                    <span class="text-stone-500">$5.00</span>
-                </div>
-                <p class="text-sm text-stone-500">Double shot, rich crema, single origin.</p>
+                <h3 class="text-2xl mb-2">Signature Espresso</h3>
+                <p class="text-stone-500 text-sm mb-4">A rich, velvety double-shot roasted to perfection.</p>
+                <p class="text-xl font-semibold">$5.00</p>
             </div>
-            <!-- Menu Item 2 -->
-            <div class="group">
-                <div class="h-80 bg-stone-200 mb-6 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 hover-card transition-all duration-300 hover:shadow-2xl">
+                <div class="h-64 bg-stone-100 rounded-2xl mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover">
                 </div>
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl">House Croissant</h3>
-                    <span class="text-stone-500">$6.50</span>
-                </div>
-                <p class="text-sm text-stone-500">Buttery, flakey, baked every morning.</p>
+                <h3 class="text-2xl mb-2">House Croissant</h3>
+                <p class="text-stone-500 text-sm mb-4">Golden, buttery layers that melt in your mouth.</p>
+                <p class="text-xl font-semibold">$6.50</p>
             </div>
-            <!-- Menu Item 3 -->
-            <div class="group">
-                <div class="h-80 bg-stone-200 mb-6 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1559925393-8be07e767e7c?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 hover-card transition-all duration-300 hover:shadow-2xl">
+                <div class="h-64 bg-stone-100 rounded-2xl mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be07e767e7c?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover">
                 </div>
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl">Avocado Toast</h3>
-                    <span class="text-stone-500">$14.00</span>
-                </div>
-                <p class="text-sm text-stone-500">Sourdough, poached egg, chili flakes.</p>
+                <h3 class="text-2xl mb-2">Avocado Toast</h3>
+                <p class="text-stone-500 text-sm mb-4">Sourdough base with farm-fresh toppings.</p>
+                <p class="text-xl font-semibold">$14.00</p>
             </div>
+
         </div>
     </section>
 

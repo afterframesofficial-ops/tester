@@ -1,54 +1,86 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopi Senja - Minimalist Cafe Template</title>
+    <title>Artisan Café - Premium Restaurant Template</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Premium Feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans">
+<body class="bg-[#FAFAFA] text-stone-900">
 
-    <!-- Navbar -->
-    <nav class="flex justify-between p-8">
-        <h1 class="text-2xl font-bold tracking-tighter">KOPI SENJA</h1>
-        <ul class="flex gap-6 font-medium">
-            <li><a href="#menu" class="hover:text-stone-500">Menu</a></li>
-            <li><a href="#about" class="hover:text-stone-500">Tentang</a></li>
-            <li><a href="#contact" class="hover:text-stone-500">Kontak</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter uppercase">Artisan.</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#menu" class="hover:text-stone-500 transition">Menu</a>
+            <a href="#about" class="hover:text-stone-500 transition">Our Story</a>
+            <a href="#location" class="hover:text-stone-500 transition">Location</a>
+        </div>
+        <a href="#" class="bg-stone-900 text-white px-6 py-2 text-sm uppercase hover:bg-stone-700 transition">Book Table</a>
     </nav>
 
     <!-- Hero Section -->
-    <header class="h-[60vh] flex flex-col justify-center items-center text-center px-4">
-        <h2 class="text-5xl font-bold mb-4">Tempat Terbaik untuk Mencari Inspirasi.</h2>
-        <p class="text-stone-600 mb-8 max-w-lg">Kami menyajikan kopi artisan dengan suasana yang tenang di pusat kota.</p>
-        <a href="#menu" class="bg-stone-800 text-white px-8 py-3 rounded-full hover:bg-stone-600">Lihat Menu</a>
+    <header class="max-w-7xl mx-auto px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-6xl md:text-7xl leading-tight mb-6">Experience Coffee, Elevated.</h1>
+            <p class="text-lg text-stone-600 mb-8 max-w-md">Small batch roasting, locally sourced ingredients, and an atmosphere designed for quiet moments. Located in the heart of downtown.</p>
+            <div class="flex gap-4">
+                <a href="#menu" class="bg-stone-900 text-white px-8 py-4 uppercase text-sm tracking-wider hover:bg-stone-700 transition">Explore Menu</a>
+                <a href="#" class="border border-stone-300 px-8 py-4 uppercase text-sm tracking-wider hover:bg-stone-100 transition">Order Online</a>
+            </div>
+        </div>
+        <!-- Placeholder for your high-quality hero photo -->
+        <div class="h-[500px] bg-stone-200 rounded-sm w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Cafe interior" class="w-full h-full object-cover">
+        </div>
     </header>
 
     <!-- Menu Section -->
-    <section id="menu" class="p-12">
-        <h3 class="text-3xl font-bold mb-8">Menu Pilihan</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Item 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="h-48 bg-stone-200 mb-4 rounded-lg"></div> <!-- Placeholder untuk fotomu -->
-                <h4 class="font-bold">Americano</h4>
-                <p class="text-stone-500 text-sm">Espresso dengan air panas</p>
-                <p class="mt-2 font-bold">Rp 25.000</p>
+    <section id="menu" class="max-w-7xl mx-auto px-8 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-4">Crafted Selections</h2>
+            <p class="text-stone-500">Hand-picked favorites for your morning ritual.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Menu Item -->
+            <div class="group">
+                <div class="h-80 bg-stone-200 mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-xl">Signature Espresso</h3>
+                    <span class="text-stone-500">$5.00</span>
+                </div>
+                <p class="text-sm text-stone-500">Double shot, rich crema, single origin.</p>
             </div>
-            <!-- Item 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="h-48 bg-stone-200 mb-4 rounded-lg"></div>
-                <h4 class="font-bold">Latte Art</h4>
-                <p class="text-stone-500 text-sm">Susu segar dengan kopi</p>
-                <p class="mt-2 font-bold">Rp 35.000</p>
+            <!-- Menu Item 2 -->
+            <div class="group">
+                <div class="h-80 bg-stone-200 mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-xl">House Croissant</h3>
+                    <span class="text-stone-500">$6.50</span>
+                </div>
+                <p class="text-sm text-stone-500">Buttery, flakey, baked every morning.</p>
             </div>
-            <!-- Item 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="h-48 bg-stone-200 mb-4 rounded-lg"></div>
-                <h4 class="font-bold">Croissant</h4>
-                <p class="text-stone-500 text-sm">Pastry khas Prancis</p>
-                <p class="mt-2 font-bold">Rp 20.000</p>
+            <!-- Menu Item 3 -->
+            <div class="group">
+                <div class="h-80 bg-stone-200 mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be07e767e7c?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-xl">Avocado Toast</h3>
+                    <span class="text-stone-500">$14.00</span>
+                </div>
+                <p class="text-sm text-stone-500">Sourdough, poached egg, chili flakes.</p>
             </div>
         </div>
     </section>

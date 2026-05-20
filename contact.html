@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Haven & Husk</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <style>body { font-family: 'Inter', sans-serif; } h1 { font-family: 'Playfair Display', serif; }</style>
 </head>
-<body class="bg-[#FDFCF8] text-stone-900 py-20">
-    <div class="max-w-xl mx-auto px-8 text-center">
-        <h1 class="text-5xl font-bold mb-12">Visit Us</h1>
-        <div class="bg-white p-10 rounded-3xl shadow-sm border border-stone-100">
-            <h3 class="font-bold mb-4">Seattle, WA</h3>
-            <p class="text-stone-600 mb-6">123 Artisan Lane, Seattle, WA 98101</p>
-            <a href="mailto:hello@havenandhusk.com" class="block bg-stone-900 text-white py-4 rounded-full font-bold">Email Us</a>
+<body class="bg-[#FDFCF8] text-stone-900 py-32">
+    <main class="max-w-xl mx-auto px-8">
+        <h1 class="text-6xl text-center mb-16">Visit Us</h1>
+        <div class="bg-white p-12 rounded-[2rem] shadow-sm border border-stone-100">
+            <h3 class="font-bold mb-6 uppercase text-[10px] tracking-widest text-stone-500">Get In Touch</h3>
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+                <input type="text" name="name" placeholder="Name" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-2 ring-stone-900">
+                <input type="email" name="email" placeholder="Email" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-2 ring-stone-900">
+                <textarea name="message" placeholder="Reservation Details" class="w-full p-4 bg-stone-50 rounded-xl h-32 outline-none focus:ring-2 ring-stone-900"></textarea>
+                <button type="submit" class="w-full bg-stone-900 text-white py-4 rounded-xl font-bold hover:bg-stone-700 transition">Send Request</button>
+            </form>
         </div>
-    </div>
+    </main>
 </body>
 </html>

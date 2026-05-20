@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Roast | Haven & Husk</title>
+    <title>Our Story | Haven & Husk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; } h1, h2, h3 { font-family: 'Playfair Display', serif; }</style>
+    <style>body { font-family: 'Inter', sans-serif; } h1, h2 { font-family: 'Playfair Display', serif; } .glass { background: rgba(253, 252, 248, 0.7); backdrop-filter: blur(10px); }</style>
 </head>
 <body class="bg-[#FDFCF8] text-stone-900">
-    <main class="max-w-4xl mx-auto px-8 py-20">
-        <h1 class="text-6xl mb-12 text-center">The Art of Roasting</h1>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="h-[400px] bg-stone-300 rounded-3xl shadow-lg"></div>
-            <div class="space-y-6">
-                <p class="text-lg leading-relaxed">We don't just roast coffee; we translate the geography of the bean into flavor. Our process is calibrated daily to highlight natural sweetness and acidity.</p>
+    <nav class="fixed w-full z-50 glass border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold italic">Haven & Husk</a>
+            <div class="flex gap-8 text-[11px] uppercase tracking-[0.2em] font-bold text-stone-600">
+                <a href="index.html" class="hover:text-stone-900">Home</a>
+                <a href="menu.html" class="hover:text-stone-900">Menu</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-8 pt-40 pb-20">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="h-[500px] bg-stone-300 rounded-[2rem] shadow-xl"></div>
+            <div class="space-y-8">
+                <h1 class="text-6xl tracking-tight">The Art of Roasting</h1>
+                <p class="text-lg text-stone-600 leading-relaxed">We don't just roast coffee; we translate the terroir of the bean into a flavor experience. Our roasting process is calibrated daily to ensure the perfect balance of sweetness and acidity.</p>
+                <div class="pt-8 border-t">
+                    <p class="font-bold mb-2">Sustainable Sourcing</p>
+                    <p class="text-sm text-stone-500">Every bean we roast is sourced through direct-trade relationships, ensuring fair pay for farmers.</p>
+                </div>
             </div>
         </div>
     </main>

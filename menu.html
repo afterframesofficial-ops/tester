@@ -2,33 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Haven & Husk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; } h1, h2, h3 { font-family: 'Playfair Display', serif; }</style>
+    <style>body { font-family: 'Inter', sans-serif; } h1, h2, h3 { font-family: 'Playfair Display', serif; } .glass { background: rgba(253, 252, 248, 0.7); backdrop-filter: blur(10px); }</style>
 </head>
 <body class="bg-[#FDFCF8] text-stone-900">
-    <nav class="max-w-4xl mx-auto px-8 py-10 flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-bold italic">Haven & Husk</a>
-        <a href="index.html" class="text-xs uppercase tracking-widest hover:underline">Back Home</a>
+    <nav class="fixed w-full z-50 glass border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold italic">Haven & Husk</a>
+            <div class="flex gap-8 text-[11px] uppercase tracking-[0.2em] font-bold text-stone-600">
+                <a href="index.html" class="hover:text-stone-900">Home</a>
+                <a href="contact.html" class="bg-stone-900 text-white px-6 py-2 rounded-full">Reserve</a>
+            </div>
+        </div>
     </nav>
-    <main class="max-w-3xl mx-auto px-8 py-16">
-        <h1 class="text-6xl mb-16 text-center">Menu</h1>
-        <!-- Coffee -->
-        <div class="mb-16">
-            <h2 class="text-2xl uppercase tracking-widest text-stone-500 mb-8 border-b border-stone-200 pb-2">Coffee</h2>
-            <div class="space-y-8">
-                <div class="flex justify-between items-baseline border-b border-stone-100 pb-4">
-                    <div><h3 class="text-xl">Single Origin Pour Over</h3><p class="text-stone-500 text-sm">Ethiopian Yirgacheffe, floral.</p></div>
+
+    <main class="max-w-5xl mx-auto px-8 pt-40 pb-20">
+        <h1 class="text-7xl mb-20 text-center tracking-tight">Our Daily Menu</h1>
+        
+        <section class="mb-20">
+            <h2 class="text-3xl mb-10 border-b border-stone-200 pb-4">Coffee & Roasts</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex justify-between items-start">
+                    <div><h3 class="text-xl">Single Origin Pour Over</h3><p class="text-stone-500 text-sm italic mt-1">Ethiopian Yirgacheffe, floral & peach.</p></div>
                     <span class="font-bold">$8.00</span>
                 </div>
-                <div class="flex justify-between items-baseline border-b border-stone-100 pb-4">
-                    <div><h3 class="text-xl">Artisan Oat Latte</h3><p class="text-stone-500 text-sm">House-made oat milk, espresso.</p></div>
+                <div class="flex justify-between items-start">
+                    <div><h3 class="text-xl">Signature Oat Latte</h3><p class="text-stone-500 text-sm italic">House-made oat milk, velvet espresso.</p></div>
                     <span class="font-bold">$6.50</span>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
